@@ -94,6 +94,34 @@ public class SinhVienDao {
         }
     }
 
+    /** NC2: Đếm số sinh viên đạt (điểm >= 5) bằng rawQuery. */
+    public int demDat() {
+        SQLiteDatabase db = helper.getReadableDatabase();
+        Cursor c = db.rawQuery(
+                "SELECT COUNT(*) FROM " + DbHelper.TABLE + " WHERE " + DbHelper.COL_DIEM + " >= 5",
+                null
+        );
+        try {
+            return c.moveToFirst() ? c.getInt(0) : 0;
+        } finally {
+            c.close();
+        }
+    }
+
+    /** NC2: Lấy điểm cao nhất của lớp bằng hàm tổng hợp MAX. */
+    public double diemCaoNhat() {
+        SQLiteDatabase db = helper.getReadableDatabase();
+        Cursor c = db.rawQuery(
+                "SELECT MAX(" + DbHelper.COL_DIEM + ") FROM " + DbHelper.TABLE,
+                null
+        );
+        try {
+            return c.moveToFirst() ? c.getDouble(0) : 0;
+        } finally {
+            c.close();
+        }
+    }
+
     /** Giải phóng kết nối CSDL (gọi trong onDestroy của Activity). */
     public void dong() {
         helper.close();

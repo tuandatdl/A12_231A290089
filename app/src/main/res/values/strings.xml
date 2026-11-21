@@ -8,7 +8,7 @@
     <string name="hint_lop">Lớp</string>
     <string name="hint_diem">Điểm</string>
     <string name="them">Thêm vào CSDL</string>
-    <string name="thong_ke">Tổng: %1$d sinh viên • Điểm trung bình: %2$.2f</string>
+    <string name="thong_ke">Tổng: %1$d SV • ĐTB: %2$.2f\nSố SV đạt (≥5): %3$d • Điểm cao nhất: %4$.1f</string>
     <string name="ma_lop_format">%1$s • %2$s</string>
     <string name="da_them">Đã thêm, id = %1$d</string>
     <string name="err_ma_sv">MSSV phải gồm đúng 10 ký tự</string>
