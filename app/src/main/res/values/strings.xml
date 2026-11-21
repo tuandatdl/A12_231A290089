@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">A12_231A290089</string>
+    <string name="title">Lab A12 – Quản lý sinh viên (SQLite)</string>
+    <string name="student">Đỗ Lê Tuấn Đạt – MSSV: 231A290089</string>
+    <string name="hint_ma_sv">MSSV (10 ký tự)</string>
+    <string name="hint_ho_ten">Họ và tên</string>
+    <string name="hint_lop">Lớp</string>
+    <string name="hint_diem">Điểm</string>
+    <string name="them">Thêm vào CSDL</string>
+    <string name="thong_ke">Tổng: %1$d sinh viên • Điểm trung bình: %2$.2f</string>
+    <string name="ma_lop_format">%1$s • %2$s</string>
+    <string name="da_them">Đã thêm, id = %1$d</string>
+    <string name="err_ma_sv">MSSV phải gồm đúng 10 ký tự</string>
+    <string name="err_ho_ten">Chưa nhập họ tên</string>
+    <string name="err_diem">Điểm phải là số</string>
+    <string name="err_diem_range">Điểm phải từ 0 đến 10</string>
+    <string name="err_trung_ma">MSSV này đã tồn tại trong CSDL</string>
+</resources>
